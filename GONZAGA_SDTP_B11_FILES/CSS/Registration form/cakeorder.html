@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cake Order Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+        <img  class="logo"src="https://static.vecteezy.com/system/resources/thumbnails/021/644/004/small/cake-on-colorful-background-tasty-dessert-bakery-shop-banner-vector.jpg"alt="cake logo"/>
+        <h1>Order Your Custom Cake</h1>
+        <p>Use your imagination and describe your dream cake!</p>
+        <form method="post" action="https://register-demo.freecodecamp.org">
+           
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+            </fieldset>
+            <fieldset>
+                <legend>Cake Details</legend>
+                <label for="cake-size">Cake Size: <input id="cake-size" name="cake-size" type="text" required /></label>
+                <label for="cake-decorations">Decorations: <textarea id="cake-decorations" name="cake-decorations" rows="3" cols="30" required></textarea></label>
+                <label for="flavour"> Please select yor desired flavor
+                    <select id="flavour" name="flavour">
+                      <option value="">please select</option>
+                      <option value="1">Red Velvet</option>
+                      <option value="2">Chocolate</option>
+                      <option value="3">Vanilla</option>
+                      <option value="4">Other</option>
+                    </select>
+                  </label>
+                  <label for="cake-flavor">Cake Flavor if choose Other<input id="cake-flavor" name="cake-flavor" type="text" required /></label>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Information</legend>
+                <label for="delivery-date">Delivery Date: <input id="delivery-date" name="delivery-date" type="date" required /></label>
+                <br>
+                <label for="delivery-address">Delivery Address: <textarea id="delivery-address" name="delivery-address" rows="3" cols="30" required></textarea></label>
+            </fieldset>
+            <label for="terms-and-conditions">
+                <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+            <input type="submit" value="Place Order" />
+        </form>
+    </main>
+</body>
+</html>
